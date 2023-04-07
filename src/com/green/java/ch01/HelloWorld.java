@@ -7,5 +7,6 @@ public class HelloWorld {
         multi line comments
         */
         System.out.println("Hello World!");
+        System.out.println("안녕 세상!");
     }
 }
