@@ -5,7 +5,7 @@ public class PrintfEx1 {
         byte b = 1;
         short s = 2;
         char c = 'A';
-        int finger = 111111;
+        int finger = 111;
 
         System.out.printf("b=%d\n", b);
         System.out.printf("s=%d%n", s);

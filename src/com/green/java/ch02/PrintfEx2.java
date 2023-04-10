@@ -1,6 +1,6 @@
 package com.green.java.ch02;
 
-public class PrintEx2 {
+public class PrintfEx2 {
     public static void main(String[] args) {
         String url = "http://www.codechobo.com";
         float f1 = .10f;
