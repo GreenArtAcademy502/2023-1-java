@@ -6,8 +6,12 @@ public class CastingEx2 {
     public static void main(String[] args) {
         int n1 = 10;
         int n2 = 3;
+
+        char c = 'A';
+        int n3 = c;
+
         double r = (double)n1 / n2;
-        System.out.printf("%.3f\n", r);
+        System.out.printf("%.4f\n", r);
 
     }
 }
