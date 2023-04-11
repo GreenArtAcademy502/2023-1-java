@@ -5,7 +5,6 @@ public class OperatorStudy1 {
         int num = 5;
         int result = 4 + num * 3;
 
-
         System.out.println(result);
 
         result = 11 / num;
