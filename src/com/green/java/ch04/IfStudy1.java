@@ -9,7 +9,7 @@ public class IfStudy1 {
             System.out.println("num은 10이 아니다.");
         }
         
-        int num2 = 4;
+        int num2 = 14;
         if(num2 >= 20) {
             System.out.println("num2은 20이상");
         } else if(num2 >= 10) {
