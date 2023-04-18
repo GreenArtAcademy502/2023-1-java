@@ -22,8 +22,11 @@ public class ArrayQuiz7 {
         for(int i=0; i<numArr.length; i++) {
             copyArr[i] = numArr[i];
         }
+        System.out.println(Arrays.toString(numArr));
         String result = Arrays.toString(copyArr);
         System.out.println(result);
+
+        numArr = copyArr;
 
     }
 }
