@@ -13,8 +13,8 @@ import java.util.Arrays;
  */
 public class ArrayQuiz7 {
     public static void main(String[] args) {
-        int[] numArr = { 11, 14, 2, 7, 36, 35, 80, 90, 1 }; //8
-        int[] copyArr = new int[numArr.length + 1]; //9
+        int[] numArr = { 11, 14, 2, 7, 36, 35, 80, 90, 1 }; //9
+        int[] copyArr = new int[numArr.length + 1]; //10
 
         copyArr[numArr.length] = 100;
         //copyArr[copyArr.length - 1] = 100;

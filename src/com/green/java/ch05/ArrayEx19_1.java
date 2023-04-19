@@ -16,13 +16,13 @@ package com.green.java.ch05;
  */
 public class ArrayEx19_1 {
     public static void main(String[] args) {
-        String[] titles = { "국어", "영어", "수학", "사회" };
+        String[] titles = { "국어", "영어", "수학", "사회", "도덕" };
         int[] titleSumArr = new int[titles.length];
         int[][] score = {
-                  { 100, 90, 80, 10 }
-                , {  20, 20, 20, 20 }
-                , {  30, 30, 30, 30 }
-                , {  40, 40, 40, 40 }
+                  { 100, 90, 80, 10, 12 }
+                , {  20, 20, 20, 20, 13 }
+                , {  30, 30, 30, 30, 14 }
+                , {  40, 40, 40, 40, 15 }
         };
         System.out.print("번호\t");
         for(int i=0; i<titles.length; i++) {

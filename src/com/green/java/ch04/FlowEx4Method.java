@@ -2,30 +2,30 @@ package com.green.java.ch04;
 
 import java.util.Scanner;
 
-public class FlowEx4 {
+class ScoreObj {
+    char getGrade(int score) {
+        if(score >= 90) {
+            return 'A';
+        } else if(score >= 80) {
+            return 'B';
+        } else if(score >= 70) {
+            return 'C';
+        }
+        return 'D';
+    }
+}
+public class FlowEx4Method {
     public static void main(String[] args) {
         int score = 0, score1 = 0;
-        char grade = 'D', grade1 = 'D';
+        char grade = 'D', grade1;
 
         System.out.print("점수를 입력하세요 > ");
         Scanner scan = new Scanner(System.in);
         score = scan.nextInt();
 
-        if(score >= 90) {
-            grade = 'A';
-        } else if(score >= 80) {
-            grade = 'B';
-        } else if(score >= 70) {
-            grade = 'C';
-        }
-
-        if(score1 >= 90) {
-            grade1 = 'A';
-        } else if(score1 >= 80) {
-            grade1 = 'B';
-        } else if(score1 >= 70) {
-            grade1 = 'C';
-        }
+        ScoreObj so = new ScoreObj();
+        grade = so.getGrade(score);
+        grade1 = so.getGrade(score1);
         System.out.printf("%d점의 학점은 %c입니다.\n", score, grade);
 
         // 90점 보다 크거나 같으면 "%d점의 학점은 A입니다."
@@ -37,3 +37,4 @@ public class FlowEx4 {
 
     }
 }
+
