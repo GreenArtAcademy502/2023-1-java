@@ -15,5 +15,8 @@ public class ObjectPrint {
 class ValueBox {
     int num;
 
-
+    @Override
+    public String toString() {
+        return String.valueOf(num);
+    }
 }

@@ -1,5 +1,7 @@
 package com.green.java.ch06;
 
+import java.io.PrintStream;
+
 public class MyMethodTest {
     public static void main(String[] args) {
         MyMethod mm = new MyMethod();
@@ -11,5 +13,9 @@ public class MyMethodTest {
 
         int result = mm.sum2(10, 245);
         System.out.println("result : " + result);
+
+        PrintStream ps = System.out;
+        //System.out = null;
+        ps.println("result2 : " + result);
     }
 }
