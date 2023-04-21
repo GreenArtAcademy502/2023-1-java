@@ -28,13 +28,15 @@ public class NumberBaseBallGame {
     public static void main(String[] args) {
         final int NUMBER_COUNT = 3;
         int[] numArr = getRandomNumberArr(NUMBER_COUNT);
-        //System.out.println(Arrays.toString(numArr));
+        System.out.println(Arrays.toString(numArr));
 
         Scanner scan = new Scanner(System.in);
         System.out.println(" [Game Start] ");
 
+        int count = 0;
+        int[] myArr = new int[NUMBER_COUNT];
         while(true) {
-            int[] myArr = new int[NUMBER_COUNT];
+            count++;
             for(int i=0; i<NUMBER_COUNT; i++) {
                 System.out.printf("%d번 숫자 입력: ", i + 1);
                 myArr[i] = scan.nextInt();
@@ -59,12 +61,6 @@ public class NumberBaseBallGame {
                 break;
             }
         }
-        System.out.println(" [Game Over] ");
-
-
-
-
-
-
+        System.out.printf(" [Game Over] count: %d\n", count);
     }
 }
