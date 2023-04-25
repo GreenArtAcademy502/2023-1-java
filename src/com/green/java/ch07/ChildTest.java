@@ -2,7 +2,10 @@ package com.green.java.ch07;
 
 public class ChildTest {
     public static void main(String[] args) {
+
         Child ch = new Child(76);
+
+
         ch.play();
         ch.age = 10;
         System.out.println(ch.age);

@@ -1,6 +1,6 @@
 package com.green.java.ch07;
 
-public class Parent extends Object {
+public class Parent {
     int age;
     public Parent() {
         super();
