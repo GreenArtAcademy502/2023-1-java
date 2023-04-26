@@ -12,14 +12,10 @@ public class BindingTest3 {
 
 class Parent3 {
     protected int x = 100;
-    void method() {
-        System.out.println("Parent Method");
-    }
+    void method() { System.out.println("Parent Method"); }
 }
-
 class Child3 extends Parent3 {
     private int x = 200;
-
     void method(int x) {
         System.out.println("x = " + x);
         System.out.println("super.x = " + super.x);

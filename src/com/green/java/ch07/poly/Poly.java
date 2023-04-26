@@ -14,6 +14,7 @@ public class Poly {
         //ani1.jump();
 
         //Dog dog1 = new Animal();
+        ani1 = new Animal();
         Dog dog1 = (Dog)ani1;
         dog1.crying();
         dog1.jump();

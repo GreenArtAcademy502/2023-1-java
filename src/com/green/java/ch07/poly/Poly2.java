@@ -10,7 +10,7 @@ public class Poly2 {
         Bulldog bd1 = (Bulldog) ani1;
 
         System.out.println("r2 : " + (ani1 instanceof Cat));
-        //Cat c1 = (Cat)ani1;
+        Cat c1 = (Cat)ani1;
 
     }
 }

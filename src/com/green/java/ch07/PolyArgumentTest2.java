@@ -1,28 +1,31 @@
 package com.green.java.ch07;
 
-public class PolyArgumentTest {
+public class PolyArgumentTest2 {
     public static void main(String[] args) {
-        Tv2 tv = new Tv2();
-        Computer com = new Computer();
-        Buyer buyer = new Buyer();
-        buyer.buy(tv); //Tv을(를) 100만원에 구매하였습니다.
-        buyer.buy(com); //Computer을(를) 200만원에 구매하였습니다.
-        buyer.buy(com); //Computer을(를) 200만원에 구매하였습니다.
-
-        buyer.printState(); //나의 남은 돈은 700만원 입니다. 보너스 점수는 %,d점 입니다.
+        Buyer3 b = new Buyer3();
+        b.buy(new Tv3());
+        b.buy(new Computer3());
+        b.summary();
+        // 구입하신 제품은 Tv, Computer, Audio, Audio 총 4개 입니다.
     }
 }
-class Buyer {
+
+class Buyer3 {
     private int money;
     private int bonusPoint;
+    private Product3[] items;
+    private int idx;
 
-    public Buyer() {
+    public Buyer3() {
         this.money = 1000;
         this.bonusPoint = 0;
+        this.items = new Product3[10];
+        this.idx = 0;
         printState();
     }
 
-    public void buy(Product p) {
+    public void buy(Product3 p) {
+        items[idx++] = p;
         money = money - p.getPrice();
         bonusPoint = bonusPoint + p.getBonusPoint();
         System.out.printf("%s을(를) %,d만원에 구매하였습니다.\n", p, p.getPrice());
@@ -35,13 +38,24 @@ class Buyer {
         );
     }
 
+    public void summary() {
+        System.out.print("구입하신 제품은");
+        if(idx > 0) {
+            System.out.printf(" %s", items[0]);
+            for (int i = 1; i < idx; i++) {
+                System.out.printf(", %s", items[i]);
+            }
+        }
+        System.out.printf(" 총 %,d개 입니다.", idx);
+    }
+
 }
 
-class Product {
+class Product3 {
     protected int price;
     protected int bonusPoint;
 
-    Product(int price) {
+    Product3(int price) {
         this.price = price;
         this.bonusPoint = (int)(price * 0.1);
     }
@@ -55,8 +69,8 @@ class Product {
     }
 
 }
-class Computer extends Product {
-    public Computer() {
+class Computer3 extends Product3 {
+    public Computer3() {
         super(200);
     }
     public String toString() {
@@ -64,9 +78,8 @@ class Computer extends Product {
     }
 }
 
-
-class Tv2 extends Product {
-    public Tv2() {
+class Tv3 extends Product3 {
+    public Tv3() {
         super(100);
     }
     public String toString() {
@@ -74,4 +87,7 @@ class Tv2 extends Product {
     }
 }
 
-
+class Audio3 extends Product3 {
+    public Audio3() { super(50); }
+    public String toString() { return "Audio"; }
+}
