@@ -9,7 +9,7 @@ public class ArrayListStudy1 {
         list.add(20); //1번방
         list.add("ddd");
 
-        Object obj = 10;
+        Object obj = true;
 
         System.out.println(list.get(0));
         System.out.println(list.get(1));

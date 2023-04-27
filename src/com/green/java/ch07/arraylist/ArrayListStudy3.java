@@ -11,12 +11,13 @@ public class ArrayListStudy3 {
         System.out.println(list);
 
         list.add(1, 100);
-        list.add(5, 300);
+        list.add(4, 300);
         System.out.println(list);
 
         int removeValue = list.remove(4);
         System.out.println("removeValue : " + removeValue);
 
         System.out.println(list);
+        System.out.println(list.size());
     }
 }

@@ -3,6 +3,7 @@ package com.green.java.ch07.arraylist;
 public class MyArrayList extends Object {
 
     private int[] items;
+
     public MyArrayList() {
         items = new int[0];
         System.out.println(items.length);
@@ -10,10 +11,10 @@ public class MyArrayList extends Object {
 
     public void add(int value) {
         int[] temp = new int[items.length + 1];
-        temp[items.length] = value;
         for (int i = 0; i < items.length; i++) {
             temp[i] = items[i];
         }
+        temp[items.length] = value;
         items = temp;
     }
 
@@ -30,6 +31,33 @@ public class MyArrayList extends Object {
             }
         }
         items = temp;
+    }
+
+    public int size() {
+        return items.length;
+    }
+
+    public int get(int idx) {
+        return items[idx];
+    }
+
+    public void printAllValue() {
+        for (int i = 0; i < this.size(); i++) {
+            System.out.println(this.get(i));
+        }
+    }
+
+    public void bubbleSort() {
+        for (int i = items.length - 1; i > 0; i--) {
+            for(int z=0; z<i; z++) {
+                int sideIdx = z + 1;
+                if(items[z] > items[sideIdx]) {
+                    int temp = items[z];
+                    items[z] = items[sideIdx];
+                    items[sideIdx] = temp;
+                }
+            }
+        }
     }
 
     @Override

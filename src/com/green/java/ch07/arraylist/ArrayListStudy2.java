@@ -8,7 +8,6 @@ public class ArrayListStudy2 {
         Integer a2 = a;
 
         double d = 10.2;
-        Double d2 = d;
 
         //generic 제네릭
         ArrayList<Integer> list = new ArrayList<>();
@@ -19,7 +18,8 @@ public class ArrayListStudy2 {
         list.add(13);
 
 
-        int n1 = list.get(0);
+        int n1 = list.get(2);
+        System.out.println("n1 : " + n1);
         System.out.println(list);
 
     }

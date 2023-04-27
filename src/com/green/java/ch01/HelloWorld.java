@@ -5,6 +5,12 @@ public class HelloWorld {
         // single line comments
         /*
         multi line comments
+
+        da
+        ads
+        asdasd
+        asd
+
         */
         System.out.println("Hello World!");
         System.out.println("안녕 세상!");

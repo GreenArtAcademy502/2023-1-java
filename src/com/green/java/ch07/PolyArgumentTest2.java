@@ -4,7 +4,7 @@ public class PolyArgumentTest2 {
     public static void main(String[] args) {
         Buyer3 b = new Buyer3();
         b.buy(new Tv3());
-        b.buy(new Computer3());
+        b.buy(new Tv3());
         b.summary();
         // 구입하신 제품은 Tv, Computer, Audio, Audio 총 4개 입니다.
     }
