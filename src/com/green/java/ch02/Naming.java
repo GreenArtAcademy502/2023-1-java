@@ -25,7 +25,7 @@ public class Naming {
 
         //이름 처음에 숫자 사용할 수 없다. but 처음만 아니면 된다.
         //String 1aa;
-        String a1a;
+        String a1a2;
 
         //이름에 빈칸 사용할 수 없다.
         //String hello World;
@@ -36,11 +36,11 @@ public class Naming {
         String aaA;
 
         //예약어 사용 금지 (파란색상 단어는 예약어)
-        //String public;
+        //String void;
         String pUblic;
 
         //상수는 전부 대문자, 스네이크 케이스 기법
-        final int NUM = 13;
-        //NUM = 20;
+        final int MAX_NUM = 16;
+        //MAX_NUM = 20;
     }
 }

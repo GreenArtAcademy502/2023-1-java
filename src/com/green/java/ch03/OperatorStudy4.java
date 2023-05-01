@@ -7,8 +7,12 @@ public class OperatorStudy4 {
         //num = num - 10;
         //num = num * -1;
         num = -num;
-
         System.out.println(num);
+
+        int num2 = 5;
+        num2 -= num2;
+        System.out.println(num2);
+
     }
 
 }

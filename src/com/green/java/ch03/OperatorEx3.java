@@ -5,7 +5,7 @@ public class OperatorEx3 {
         int i=5, z=5;
         System.out.println(i++);
         System.out.println(++z);
-        System.out.printf("i=%d, j=%d\n", i, z);
+        System.out.printf("i=%d, z=%d\n", i, z);
 
         int k = 5;
         int r = k++ - ++k;

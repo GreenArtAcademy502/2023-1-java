@@ -7,6 +7,7 @@ import java.util.Scanner;
 // 70점 보다 크거나 같으면 "%d점의 학점은 C0입니다."
 // 70점 미만 opt 없음 무조건 D학점, 나머지 "%d점의 학점은 D입니다."
 
+//D학점은 무조건 D학점 출력.(+, -, 0 없음)
 //1의 3자리가 8점이상 +, 4미만 -, 나머지 0
 public class FlowEx5 {
     public static void main(String[] args) {
@@ -45,5 +46,8 @@ public class FlowEx5 {
 
             System.out.printf("%d점의 학점은 %c%c입니다.", score, grade, opt);
         }
+
+
+
     }
 }

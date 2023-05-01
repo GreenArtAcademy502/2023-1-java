@@ -7,8 +7,6 @@ class NumberBox {
 
 //p.265 ~ 267
 public class ParamsTest {
-
-
     public static void main(String[] args) {
         int num = 10;
         changeNum(num);
@@ -17,13 +15,13 @@ public class ParamsTest {
         NumberBox nb = new NumberBox();
         nb.num = 10;
         changeNum2(nb);
-        System.out.println(nb.num);//10,
+        System.out.println(nb.num);//20,
 
 
         NumberBox nb2 = new NumberBox();
-        NumberBox result = changeNum3(nb2);
+        nb2 = changeNum3(nb2);
         System.out.println("nb2.num : " + nb2.num);
-        System.out.println("result.num : " + result.num);
+        //System.out.println("result.num : " + result.num);
     }
 
     static void changeNum(int num) {

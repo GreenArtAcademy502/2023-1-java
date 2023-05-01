@@ -15,7 +15,7 @@ public class OperatorEx24 {
         boolean r2 = (2 > 1) && (3 > 2) && (3 >= 5);
         System.out.printf("r2 : %b\n", r2);
 
-        boolean r3 = (2 > 1) || (3 > 2) || (3 >= 5);
+        boolean r3 = (2 > 1) || ((3 > 2) && (3 >= 5));
         System.out.printf("r3 : %b\n", r3);
     }
 }

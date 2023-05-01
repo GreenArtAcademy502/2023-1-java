@@ -8,7 +8,7 @@ public class OperatorEx18 {
 
         System.out.println(Math.round(315.4)); //315
         System.out.println(Math.round(315.5)); //316
-        System.out.println(Math.ceil(315.01)); //316.0
+        System.out.println(Math.ceil(315.00000000001)); //316.0
         System.out.println(Math.floor(315.999999)); //315.0
 
     }

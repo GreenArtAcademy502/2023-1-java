@@ -2,7 +2,8 @@ package com.green.java.ch05;
 
 public class ArrayQuiz1 {
     public static void main(String[] args) {
-        int[] numArr = {0, 0, 0, 0, 0, 0};
+        //int[] numArr = {0, 0, 0, 0, 0, 0};
+        int[] numArr = new int[6];
 
         //for (값 입력, 1, 2, 3)
         for(int i=0; i<numArr.length; i++) {

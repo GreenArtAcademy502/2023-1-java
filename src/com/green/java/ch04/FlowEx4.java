@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class FlowEx4 {
     public static void main(String[] args) {
-        int score = 0, score1 = 0;
-        char grade = 'D', grade1 = 'D';
+        int score = 0;
+        char grade = 'D';
 
         System.out.print("점수를 입력하세요 > ");
         Scanner scan = new Scanner(System.in);
@@ -17,14 +17,6 @@ public class FlowEx4 {
             grade = 'B';
         } else if(score >= 70) {
             grade = 'C';
-        }
-
-        if(score1 >= 90) {
-            grade1 = 'A';
-        } else if(score1 >= 80) {
-            grade1 = 'B';
-        } else if(score1 >= 70) {
-            grade1 = 'C';
         }
         System.out.printf("%d점의 학점은 %c입니다.\n", score, grade);
 

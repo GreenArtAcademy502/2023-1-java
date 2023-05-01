@@ -6,9 +6,9 @@ public class VarEx2 {
 
         System.out.printf("x: %d, y: %d \n", x, y);
 
-        temp = x;
-        x = y;
-        y = temp;
+        temp = y;
+        y = x;
+        x = temp;
 
         System.out.printf("x: %d, y: %d \n", x, y);
     }

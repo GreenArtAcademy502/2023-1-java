@@ -1,7 +1,7 @@
 package com.green.java.ch02;
 public class VariableNumber {
     public static void main(String[] args) {
-        //변수 숫자형
+        //변수 정수형
         byte b1; //1byte
         short s1; //2byte
         long l1; //8byte

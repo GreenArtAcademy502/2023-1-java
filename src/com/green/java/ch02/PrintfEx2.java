@@ -8,7 +8,7 @@ public class PrintfEx2 {
 
         System.out.printf("f1=%f, %e, %g%n", f1, f1, f1);
         System.out.printf("d=%f\n", d);
-        System.out.printf("d=%14.10f\n", d);
+        System.out.printf("d=%014.10f\n", d);
         System.out.printf("d=%.3f\n", d);
 
         System.out.println("[12345678901234567890]");

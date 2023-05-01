@@ -7,6 +7,9 @@ public class CastingTest {
         //기본형
         //long, int, short, byte
 
+        long l1 = 10;
+        float f1 = l1;
+
         //참조형
         String str;
         Scanner scan;

@@ -9,7 +9,9 @@ public class VariableNumber2 {
 
         int i1 = 129;
         int i2 = b1; //자동형변환
-        b1 = (byte)i1; //강제형변환
+        if(i1 <= Byte.MAX_VALUE && i1 >= Byte.MIN_VALUE) {
+            b1 = (byte)i1; //강제형변환
+        }
         System.out.println(b1);
 
         b1 = (byte)-129;

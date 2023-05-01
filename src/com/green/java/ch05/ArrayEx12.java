@@ -5,7 +5,8 @@ public class ArrayEx12 {
         String[] names = { "Kim", "Park", "Yi" };
 
         for(int i=0; i<names.length; i++) {
-            System.out.printf("names[%d]: %s\n", i, names[i]);
+            String nm = names[i];
+            System.out.printf("names[%d]: %s\n", i, nm);
         }
         names[0] = "Yu";
         int i=0;

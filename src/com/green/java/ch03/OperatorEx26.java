@@ -9,5 +9,6 @@ public class OperatorEx26 {
         System.out.println(a == 0 && ++b != 0);
         System.out.println(a == 5 && ++b != 0);
         System.out.println(a == 5 && b++ != 0);
+        System.out.println("b : " + b);
     }
 }
