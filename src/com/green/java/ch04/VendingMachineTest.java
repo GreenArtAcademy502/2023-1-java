@@ -9,11 +9,6 @@ public class VendingMachineTest {
         vm.insert(10000);
 
         vm.showMenus();
-        vm.purchaseDrink(1);
-        vm.purchaseDrink(1);
-        vm.purchaseDrink(2);
-        //콜라를 구매하였습니다. (money값은 -1000처리)
-
         /*
         번호 \t 메뉴명 \t 가격
         1. \t 콜라 \t 1,000원
@@ -22,6 +17,14 @@ public class VendingMachineTest {
         4. \t 미란다 \t 2,500원
          */
 
+        vm.purchaseDrink(1);
+        vm.purchaseDrink(2);
+        vm.purchaseDrink(1);
+        //콜라를 구매하였습니다. (money값은 -1000처리)
+
+
+        vm.showPurchaseList();
+        //콜라, 콜라, 콜라을(를) 구매하였습니다.
         vm.showMoney(); //현재 잔액은 38,000원입니다.
 
     }
