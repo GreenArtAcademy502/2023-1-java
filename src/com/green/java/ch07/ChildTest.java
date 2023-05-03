@@ -2,8 +2,8 @@ package com.green.java.ch07;
 
 public class ChildTest {
     public static void main(String[] args) {
-
         Child ch = new Child(76);
+        Child ch2 = new Child();
 
 
         ch.play();

@@ -1,10 +1,15 @@
 package com.green.java.ch06;
 
 public class CarTest {
+
     public static void main(String[] args) {
         Car.brand = "하하";
-        System.out.println(Car.brand);
+        Car.powerOn();
+
         Car c1 = new Car();
+
+        System.out.println(Car.brand);
+
         Car c2 = new Car();
 
         c1.brand = "쉐보레";

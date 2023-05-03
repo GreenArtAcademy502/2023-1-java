@@ -5,7 +5,6 @@ public class Child extends Parent {
     public Child() {}
 
     public Child(int age) {
-        super();
         super.age = age;
         System.out.println("-- Child int age 생성자 --");
     }

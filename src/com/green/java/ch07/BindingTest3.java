@@ -6,6 +6,7 @@ public class BindingTest3 {
         Child3 c = new Child3();
 
         p.method();
+        c.method();
         c.method(5);
     }
 }
@@ -16,6 +17,10 @@ class Parent3 {
 }
 class Child3 extends Parent3 {
     private int x = 200;
+    void method() {
+        System.out.println("Child Method");
+        super.method();
+    }
     void method(int x) {
         System.out.println("x = " + x);
         System.out.println("super.x = " + super.x);

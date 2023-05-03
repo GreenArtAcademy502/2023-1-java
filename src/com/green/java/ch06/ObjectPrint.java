@@ -6,17 +6,17 @@ public class ObjectPrint {
         System.out.println(str);
 
         ValueBox vb = new ValueBox();
-        vb.num = 12;
-        System.out.println(vb);
+        vb.num = 15;
+        System.out.println(vb + "안녕");
 
     }
 }
 
 class ValueBox {
     int num;
-
     @Override
     public String toString() {
         return String.valueOf(num);
     }
+
 }

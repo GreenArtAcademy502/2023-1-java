@@ -11,8 +11,8 @@ public class TvTest5 {
         tv1.color = "black";
         tv2.color = "red";
 
-        tv1.brand = "현대";
-        tv2.brand = "기아";
+        //tv1.brand = "현대";
+        //tv2.brand = "기아";
         Tv.brand = "폭스바겐";
 
         TvTest5.brand = "볼보";

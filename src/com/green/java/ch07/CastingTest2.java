@@ -6,6 +6,8 @@ public class CastingTest2 {
         Car car2 = null;
         FireCar fc = null;
 
+
+
         car.drive();
         //fc = (FireCar)car;
     }

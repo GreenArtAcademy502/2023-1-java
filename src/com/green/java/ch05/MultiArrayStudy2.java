@@ -4,10 +4,10 @@ package com.green.java.ch05;
 public class MultiArrayStudy2 {
     public static void main(String[] args) {
         int[][] mArr = new int[4][3];
-
+        int num = 1;
         for(int i=0; i<mArr.length; i++) {
             for(int z=0; z<mArr[i].length; z++) {
-                mArr[i][z] = i * mArr[i].length + z + 1;
+                mArr[i][z] = num++;
             }
         }
 

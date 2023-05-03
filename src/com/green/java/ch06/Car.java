@@ -10,7 +10,11 @@ public class Car {
     }
 
     void printInfo() {
+        Car.powerOn();
         System.out.printf("brand: %s, model : %s, price: %d\n"
                 , brand, model, price);
     }
 }
+
+
+

@@ -3,7 +3,7 @@ package com.green.java.ch06;
 public class TvTest {
     public static void main(String[] args) {
         String str = new String("dd");
-        Tv tv = new Tv();
+        Tv tv = new Tv(); //1
         System.out.printf("power : %b\n", tv.power);
         System.out.printf("channel : %d\n", tv.channel);
 
@@ -22,6 +22,7 @@ public class TvTest {
         Tv tv2 = tv;
         System.out.printf("channel : %d\n", tv2.channel);
 
-
+        Tv tv3 = new Tv(); //2
+        System.out.printf("channel : %d\n", tv3.channel);
     }
 }

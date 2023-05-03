@@ -9,13 +9,13 @@ public class Tv {
     //클래스 멤버필드
     static String brand;
 
-
     void power() { power = !power; }
     void channelUp() { ++channel; }
     void channelDown() { --channel; }
     void test(String str) {
         System.out.println(str);
     }
+
     static String getBrand() {
         return brand;
     }

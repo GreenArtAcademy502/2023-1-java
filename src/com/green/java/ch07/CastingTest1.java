@@ -8,11 +8,13 @@ public class CastingTest1 {
 
         fc.water();
         car = fc;
+
         //car.water();
         //car = new Car();
         if(car instanceof FireCar) {
             fc2 = (FireCar)car;
             fc2.water();
+            //car.water();
         } else {
             System.out.println("안돼!!");
         }

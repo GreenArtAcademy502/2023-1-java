@@ -18,6 +18,7 @@ class Parent2 {
 }
 class Child2 extends Parent2 {
     int x = 200;
+
     @Override
     void method() {
         System.out.println("Child Method");

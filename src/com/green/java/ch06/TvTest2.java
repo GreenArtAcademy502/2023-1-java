@@ -8,12 +8,12 @@ public class TvTest2 {
     public static void main(String[] args) {
         Tv2 tv = new Tv2();
 
-        for(int i=0; i<10; i++) {
+        for(int i=0; i<100; i++) {
             tv.channelUp();
         }
         System.out.printf("channel : %d\n", tv.channel);
 
-        for(int i=0; i<10; i++) {
+        for(int i=0; i<100; i++) {
             tv.channelDown();
         }
         System.out.printf("channel : %d\n", tv.channel);
@@ -28,10 +28,9 @@ class Tv2 {
     final int MIN_CHANNEL = 1;
 
     void power() { power = !power; }
-    void channelUp() {
-        if(channel < MAX_CHANNEL){
-            ++channel;
-        }
+    void channelUp() { //5는 최대 채널값입니다.
+        if(channel == MAX_CHANNEL) { return; }
+        ++channel;
     }
     void channelDown() {
         if(channel > MIN_CHANNEL) {

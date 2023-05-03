@@ -59,6 +59,7 @@ class Computer extends Product {
     public Computer() {
         super(200);
     }
+    @Override
     public String toString() {
         return "Computer";
     }
@@ -69,6 +70,7 @@ class Tv2 extends Product {
     public Tv2() {
         super(100);
     }
+    @Override
     public String toString() {
         return "Tv";
     }

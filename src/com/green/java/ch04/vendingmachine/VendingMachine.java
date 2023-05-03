@@ -1,4 +1,4 @@
-package com.green.java.ch04;
+package com.green.java.ch04.vendingmachine;
 
 import java.util.LinkedList;
 
