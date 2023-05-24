@@ -2,7 +2,6 @@ package com.green.java.ch08;
 //p.416
 public class TryCatchStudy1 {
     public static void main(String[] args) {
-
         try {
             int r1 = 10 / 0;
             System.out.println("다음줄");

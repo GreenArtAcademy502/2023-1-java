@@ -19,5 +19,8 @@ public class ArrayListStudy3 {
 
         System.out.println(list);
         System.out.println(list.size());
+
+        list.clear();
+        System.out.println(list);
     }
 }

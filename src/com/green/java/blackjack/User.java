@@ -20,4 +20,21 @@ public abstract class User {
         return cardList;
     }
 
+    protected int getPointSum() {
+        return Rule.getScore(cardList);
+    }
+
+    public void showCards() {
+        System.out.println("[ 현재 보유 카드 목록 ]");
+        for(Card c : cardList) {
+            System.out.println(c);
+        }
+        /*
+        [ 현재 보유 카드 목록 ]
+        Card { ♠, 10 }
+        Card { ♠, 5 }
+        Card { ♠, 2 }
+         */
+    }
+
 }

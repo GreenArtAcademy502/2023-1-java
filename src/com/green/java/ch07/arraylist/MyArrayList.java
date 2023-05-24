@@ -6,7 +6,6 @@ public class MyArrayList extends Object {
 
     public MyArrayList() {
         items = new int[0];
-        System.out.println(items.length);
     }
 
     public void add(int value) {
@@ -31,6 +30,10 @@ public class MyArrayList extends Object {
             }
         }
         items = temp;
+    }
+
+    public void set(int idx, int val) {
+        this.items[idx] = val;
     }
 
     public int size() {
@@ -58,6 +61,13 @@ public class MyArrayList extends Object {
                 }
             }
         }
+    }
+
+    public boolean contains(int pVal) {
+        for(int val : items) {
+            if(val == pVal) { return true; }
+        }
+        return false;
     }
 
     @Override

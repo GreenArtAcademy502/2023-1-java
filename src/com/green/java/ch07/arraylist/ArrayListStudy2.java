@@ -1,6 +1,7 @@
 package com.green.java.ch07.arraylist;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListStudy2 {
     public static void main(String[] args) {
@@ -10,7 +11,7 @@ public class ArrayListStudy2 {
         double d = 10.2;
 
         //generic 제네릭
-        ArrayList<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         //list.add("11");
         //list.add(10.1);
         //list.add(true);
@@ -18,7 +19,7 @@ public class ArrayListStudy2 {
         list.add(13);
 
 
-        int n1 = list.get(2);
+        int n1 = list.get(1);
         System.out.println("n1 : " + n1);
         System.out.println(list);
 
