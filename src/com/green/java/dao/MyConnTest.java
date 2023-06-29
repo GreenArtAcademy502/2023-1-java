@@ -1,17 +1,27 @@
 package com.green.java.dao;
 
-import java.sql.Connection;
-import java.sql.SQLException;
+import com.green.java.dao.model.BoardDetailVo;
+import com.green.java.dao.model.BoardSelDto;
+import com.green.java.dao.model.BoardUpdDto;
+import com.green.java.dao.model.BoardVo;
+
+import java.util.List;
 
 public class MyConnTest {
     public static void main(String[] args) {
-        MyConnection mc = new MyConnection();
-        try {
-            Connection con = mc.getConn();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+        BoardDao boardDao = new BoardDao();
+        int page = 2;
+        int row = 30;
+        int startIdx = (page - 1) * row;
+
+        BoardSelDto dto = new BoardSelDto();
+        dto.setStartIdx(startIdx);
+        dto.setRow(row);
+
+        List<BoardVo> list = boardDao.selBoard(dto);
+        for(BoardVo vo : list) {
+            System.out.println(vo);
         }
+
     }
 }

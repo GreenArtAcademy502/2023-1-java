@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class MyConnection {
     private final String DRIVER = "org.mariadb.jdbc.Driver";
-    private final String HOST = "localhost";
+    private final String HOST = "192.168.0.144";
     private final String PORT = "3306";
-    private final String DB_NAME = "board";
+    private final String DB_NAME = "team_z";
     private final String URL;
     private final String USERNAME = "root";
     private final String PASSWORD = "green502";
