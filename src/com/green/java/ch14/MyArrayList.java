@@ -10,6 +10,12 @@ interface MyPredicate {
     boolean test(int num);
 }
 
+@FunctionalInterface
+interface MyFunction2 {
+    int apply(int p);
+}
+
+
 public class MyArrayList {
     private int[] arr;
 
@@ -33,7 +39,14 @@ public class MyArrayList {
     }
 
     public MyArrayList filter(MyPredicate predicate) {
-        return null;
+        MyArrayList temp = new MyArrayList();
+        for(int i=0; i<this.arr.length; i++) {
+            int val = this.arr[i];
+            if(predicate.test(val)) {
+                temp.add(val);
+            }
+        }
+        return temp;
     }
 
     @Override

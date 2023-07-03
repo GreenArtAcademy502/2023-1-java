@@ -7,8 +7,8 @@ public class FightableTest {
     }
 
     public static void main(String[] args) {
-        StreetFighter sf = new StreetFighter();
-        run(sf);
+
+
 
         run(new Fightable() {
             @Override
@@ -24,6 +24,8 @@ public class FightableTest {
             }
         });
 
+        Fightable sf = new StreetFighter();
+        run(sf);
         Fightable f1 = new Fightable() {
             @Override
             public void punch() {
