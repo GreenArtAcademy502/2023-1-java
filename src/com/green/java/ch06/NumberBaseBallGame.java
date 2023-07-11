@@ -46,10 +46,7 @@ public class NumberBaseBallGame {
             for(int i=0; i<NUMBER_COUNT; i++) {
                 for(int z=0; z<NUMBER_COUNT; z++) {
                     if(numArr[i] == myArr[z]) {
-                        if(i == z) {
-                            s++;
-                        } else {
-                            b++;
+                        if(i == z) { s++; } else {                            b++;
                         }
                     }
                 }

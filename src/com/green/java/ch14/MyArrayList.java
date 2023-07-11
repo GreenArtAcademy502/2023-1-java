@@ -38,6 +38,15 @@ public class MyArrayList {
         }
     }
 
+    public MyArrayList map(MyFunction2 fn) {
+        MyArrayList temp = new MyArrayList();
+        for(int i=0; i<this.arr.length; i++) {
+            int val = fn.apply(this.arr[i]);
+            temp.add(val);
+        }
+        return temp;
+    }
+
     public MyArrayList filter(MyPredicate predicate) {
         MyArrayList temp = new MyArrayList();
         for(int i=0; i<this.arr.length; i++) {
@@ -48,6 +57,37 @@ public class MyArrayList {
         }
         return temp;
     }
+    public void removeIf(MyPredicate predicate) {
+        int[] temp = new int[this.arr.length];
+        int idx = 0;
+        for (int i = 0; i < this.arr.length; i++) {
+            if (!predicate.test(this.arr[i])) {
+                int val = this.arr[i];
+                temp[idx++] = val;
+            }
+        }
+        int[] temp2 = new int[idx];
+        for (int i = 0; i < temp2.length; i++) {
+            temp2[i] = temp[i];
+        }
+        this.arr = temp2;
+    }
+
+    public void replaceAll(MyFunction2 fn) {
+        for(int i=0; i<this.arr.length; i++) {
+            this.arr[i] = fn.apply(this.arr[i]);
+        }
+    }
+
+    public static MyArrayList asList(int... nums) {
+        MyArrayList ma = new MyArrayList();
+        for(int i=0; i<nums.length; i++) {
+            int val = nums[i];
+            ma.add(val);
+        }
+        return ma;
+    }
+
 
     @Override
     public String toString() {
@@ -59,6 +99,4 @@ public class MyArrayList {
         sb.append(" ]");
         return sb.toString();
     }
-
-
 }

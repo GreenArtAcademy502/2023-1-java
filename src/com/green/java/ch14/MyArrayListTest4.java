@@ -20,7 +20,6 @@ public class MyArrayListTest4 {
         }
         MyArrayList rMa = ma.map(item -> item + 4);
 
-
         MyFunction2 mf2 = item -> item + 4;
 
         MyFunction2 mf22 = new MyFunction2() {
